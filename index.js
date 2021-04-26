@@ -1,3 +1,4 @@
-const person = require("./person");
+const Person = require("./person");
 
-console.log(person.age);
+miajee = new Person("Miajee", 20);
+miajee.generate();
