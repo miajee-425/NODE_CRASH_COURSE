@@ -1,4 +1,10 @@
-const Person = require("./person");
+const Logger = require('./logger');
 
-miajee = new Person("Miajee", 20);
-miajee.generate();
+const logger = new Logger();
+
+// to register listeners
+logger.on('message', (data)=> { 
+    console.log('Called Listener', data);
+});
+
+logger.log('Hello');
